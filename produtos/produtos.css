@@ -1,0 +1,90 @@
+/* Cores Terrosas */
+.bg-terracota {
+    background-color: #E86F48;
+}
+
+/* Cores Vibrantes */
+.btn-terracota {
+    background-color: #D96035;
+    border-color: #D96035;
+    color: #FFF;
+}
+
+.btn-terracota:hover {
+    background-color: #B34926;
+    border-color: #B34926;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 20rem;
+    /* Defina a altura desejada para as imagens */
+}
+
+/* Estilos para os filtros */
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section label {
+    font-weight: bold;
+    color: #E44E3A;
+    margin-right: 10px;
+}
+
+.filter-section select {
+    padding: 5px 10px;
+    border: 1px solid #E44E3A;
+    border-radius: 4px;
+    background-color: #FFF;
+    color: #333;
+}
+
+.filter-section select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(228, 78, 58, 0.2);
+}
+
+.filter-section option {
+    color: #333;
+}
+
+.filter-section option:hover {
+    background-color: #E44E3A;
+    color: #FFF;
+}
+
+.filter-section option:checked {
+    background-color: #E44E3A;
+    color: #FFF;
+}
+.fixed-size-image {
+    height: 20rem; /* Defina a altura desejada */
+    object-fit: scale-down;
+}
+/* Estilo personalizado para a navbar em dispositivos móveis */
+@media (max-width: 767px) {
+    .navbar-desktop {
+        display: none;
+    }
+    
+    .navbar-mobile {
+        display: block;
+    }
+}
+
+/* Estilo personalizado para a navbar em desktops */
+@media (min-width: 768px) {
+    .navbar-mobile {
+        display: none;
+    }
+    
+    .navbar-desktop {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

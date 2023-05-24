@@ -1,0 +1,62 @@
+/* Cores Terrosas */
+.bg-terracota {
+    background-color: #E86F48;
+}
+
+/* Cores Vibrantes */
+.btn-terracota {
+    background-color: #D96035;
+    border-color: #D96035;
+    color: #FFF;
+}
+
+.btn-terracota:hover {
+    background-color: #B34926;
+    border-color: #B34926;
+}
+
+.fixed-size-image {
+    max-width: 100%;
+    height: 20rem;
+    width: 20rem;
+    max-height: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: #000;
+    background-color: #D96035;
+    top: 50%;
+    transform: translate(0rem, -7rem);
+    max-width: 3rem
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+ /* Estilo personalizado para a navbar em dispositivos móveis */
+ @media (max-width: 767px) {
+    .navbar-desktop {
+        display: none;
+    }
+    
+    .navbar-mobile {
+        display: block;
+    }
+}
+
+/* Estilo personalizado para a navbar em desktops */
+@media (min-width: 768px) {
+    .navbar-mobile {
+        display: none;
+    }
+    
+    .navbar-desktop {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

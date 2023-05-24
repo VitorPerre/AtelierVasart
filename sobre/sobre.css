@@ -1,0 +1,116 @@
+/* Cores Terrosas */
+.bg-terracota {
+    background-color: #E86F48;
+}
+
+/* Cores Vibrantes */
+.btn-terracota {
+    background-color: #D96035;
+    border-color: #D96035;
+    color: #FFF;
+}
+
+.btn-terracota:hover {
+    background-color: #B34926;
+    border-color: #B34926;
+}
+
+body {
+    background-image: url("/images/fundo.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fixed-size-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilização dos textos */
+h1 {
+    font-size: 36px;
+    color: #FFF;
+    animation: fade-in 1s ease-in-out;
+}
+
+h2 {
+    font-size: 24px;
+    color: #FFF;
+    animation: slide-in-bottom 1s ease-in-out;
+}
+
+p {
+    font-size: 18px;
+    color: #FFF;
+    animation: fade-in 1s ease-in-out;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #FFF;
+    animation: fade-in 1s ease-in-out;
+}
+
+/* Animação fade-in */
+@keyframes fade-in {
+    0% {                                                                                                                                                                    
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animação slide-in-bottom */
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilização dos Cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(232, 111, 72, 0.8);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 2rem;
+}
+/* Estilo personalizado para a navbar em dispositivos móveis */
+ @media (max-width: 767px) {
+    .navbar-desktop {
+        display: none;
+    }
+    
+    .navbar-mobile {
+        display: block;
+    }
+}
+
+/* Estilo personalizado para a navbar em desktops */
+@media (min-width: 768px) {
+    .navbar-mobile {
+        display: none;
+    }
+    
+    .navbar-desktop {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
